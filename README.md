@@ -1,2 +1,1 @@
-# markdown-it-ordu
-Custom markdown processing module for our own purposes.
+Not really designed for anyone but us, use it if you need it but support yourself.
