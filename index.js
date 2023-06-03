@@ -60,11 +60,11 @@ module.exports = function md_bootstrap_boxes_plugin(md, options) {
                         var anchorText = `<i class="icon fa-solid fa-${iconClass}"></i>&nbsp;<span class="show-text">${titleText}</span>&nbsp;<i class="icon fa-solid fa-angle-down"></i>`;
                         return `<a class="btn btn-link d-flex justify-start col-12 alert-info" data-bs-toggle="collapse" href="#md-tips-${name}-${rand}" role="button" aria-expanded="false" aria-controls="md-tips-${name}-${rand}">${anchorText}</a>
                         <div class="collapse overflow-scroll alert alert-info md-collapseinfo" id="md-tips-${name}-${rand}" style="max-height: 200px;"><p class="lead">${titleText}</p>\n`;
+                    } else if (name === "magazinestyle") {
+                        return '<div class="magazinestyle">\n';
                     } else {
                         return `<div class="alert alert-${name}" id="md-tips-${name}"><p class="lead"><i class="icon fa-solid fa-${iconClass}"></i>${titleText}</p>\n`;
                     }
-                } else if (name === "magazinestyle") {
-                    return '<div class="magazinestyle">\n';
                 } else {
                     return '</div><div class="clearfix"></div>\n';
                 }
