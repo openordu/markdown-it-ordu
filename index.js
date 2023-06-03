@@ -63,6 +63,8 @@ module.exports = function md_bootstrap_boxes_plugin(md, options) {
                     } else {
                         return `<div class="alert alert-${name}" id="md-tips-${name}"><p class="lead"><i class="icon fa-solid fa-${iconClass}"></i>${titleText}</p>\n`;
                     }
+                } else if (name === "magazinestyle") {
+                    return '<div class="magazinestyle">\n';
                 } else {
                     return '</div><div class="clearfix"></div>\n';
                 }
@@ -176,6 +178,7 @@ module.exports = function md_bootstrap_boxes_plugin(md, options) {
         setupContainer('left');
         setupContainer('right');
         setupContainer('center');
+        setupContainer('magazinestyle');
 
         if (links) {
             setupLinks();
